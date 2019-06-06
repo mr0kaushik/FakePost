@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#6D1B7B</color>
+    <color name="colorAccent">#D500F9</color>
+    <color name="colorBlueType1">#1DA1F4</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <color name="colorTwitter">#5BC0DE</color>
+    <color name="colorTwitterShadow">#5770f3</color>
+
+    <color name="colorFacebook">#3b5998</color>
+    <color name="colorFacebookShadow">#344E86</color>
+    <color name="colorFacebookComponents">#606770</color>
+
+
+
+    <color name="colorBlack">#000</color>
+    <color name="colorLightGray">#AAB8C2</color>
+    <color name="colorExtraLightGray">#E1E8ED</color>
+    <color name="colorExtraExtraLightGray">#F5F8FA</color>
+    <color name="colorGreyType1">#D5D5D5</color>
+    <color name="colorGrey">#657786</color>
+
+    <color name="gradient_end">#8e5aeb</color>
+    <color name="profile_desc">#D1D1FF</color>
+    <color name="bg_meta_container">#000000</color>
+    <color name="profile_default_tint">#e0e0e0</color>
+
+    <color name="color_transparent">#00FFFFFF</color>
+
+
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar_layout">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorWhite"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_shape"
+            android:backgroundTint="@color/colorTwitter"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_twitter_button"
+            android:drawablePadding="0dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:minWidth="250dp"
+            android:minHeight="80dp"
+            android:paddingStart="15dp"
+            android:paddingTop="-5dp"
+            android:paddingEnd="10dp"
+            android:text="@string/twitter"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:typeface="sans"
+            android:letterSpacing=".2"
+            android:textFontWeight="500" />
+
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_below="@id/btnTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_shape"
+            android:backgroundTint="@color/colorFacebook"
+            android:drawableStart="@drawable/ic_facebook"
+            android:drawablePadding="0dp"
+            android:minHeight="80dp"
+            android:minWidth="250dp"
+            android:text="@string/facebook"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:typeface="sans"
+            android:padding="10dp"
+            android:letterSpacing=".2"
+            android:textFontWeight="500"
+            android:paddingStart="15dp"
+            android:paddingTop="-5dp"
+            android:paddingEnd="10dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+        <!--<info.hoang8f.widget.FButton-->
+            <!--android:id="@+id/btnFacebook"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:text="@string/facebook"-->
+            <!--android:layout_below="@id/btnTwitter"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:drawableStart="@drawable/ic_facebook"-->
+            <!--android:drawablePadding="0dp"-->
+            <!--android:minHeight="80dp"-->
+            <!--android:minWidth="250dp"-->
+            <!--android:textSize="28sp"-->
+            <!--android:textFontWeight="500"-->
+            <!--android:letterSpacing="3"-->
+            <!--android:typeface="sans"-->
+            <!--android:textColor="@android:color/white"/>-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

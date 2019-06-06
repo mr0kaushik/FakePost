@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacebookWithText">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/colorWhite"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/MenuStyle"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/my_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/headPart"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutForImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/profilePic"
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:adjustViewBounds="true"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_add_icon"
+                        android:layout_margin="13.2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutForName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/linearLayoutForImage">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13.2dp"
+                            android:fontFamily="@font/roboto"
+                            android:padding="4dp"
+                            android:text="@string/name"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/dateAndTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/roboto"
+                            android:paddingStart="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="djhka"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16sp" />
+                        <ImageView
+                            android:id="@+id/dotAfterDateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_toEndOf="@id/dateAndTime"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_single_dot_icon"/>
+
+                        <ImageView
+                            android:id="@+id/postPrivacy"
+                            android:layout_width="wrap_content"
+                            android:layout_toEndOf="@id/dotAfterDateTime"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_world_icon"
+                            android:paddingBottom="4dp"
+                            android:paddingEnd="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingTop="3dp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="13.2dp"
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_horizontal_dots_icon"
+                        android:contentDescription="@string/drop_down" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/editPart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headPart">
+
+                <com.luseen.autolinklibrary.AutoLinkTextView
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/content"
+                    android:maxLength="280"
+                    android:padding="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_below="@id/editPart">
+
+                <TextView
+                    android:id="@+id/textViewComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/commentsText"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/SampleNumber"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="2dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/commentsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/dotAfterComments"
+                    android:fontFamily="@font/roboto"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/comments"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/dotAfterComments"
+                    android:layout_width="wrap_content"
+                    android:layout_toStartOf="@id/textViewShares"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_single_dot_icon"/>
+
+                <TextView
+                    android:id="@+id/textViewShares"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/sharesText"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/SampleNumber"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="2dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sharesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/roboto"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/shares"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/reTweetView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorExtraLightGray"
+                android:layout_below="@id/linearLayoutRL"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
