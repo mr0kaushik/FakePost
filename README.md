@@ -25,4 +25,17 @@ This app can be easily use to create meme using posts.
 5. **Options to select Post privacy (public or friends)**
 
 ## Screenshots
-<img src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/mo.jpg"/>
+
+| Home Page     | Twitter Option  | Facbook Option  | 
+|---------------|-----------------|-----------------|
+|<img width="200px" height="400px" src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/mo.jpg"/>|<img width="200px" height="400px" src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/to.jpg"/>|<img width="200px" height="400px" src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/fo.jpg"/>|
+
+| Twitter Text Post | Twitter Image Post | 
+|-------------------|--------------------|
+|<img width="200px" height="400px" src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/twt.jpg"/>|<img width="200px" height="400px" src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/twi.jpg"/>|
+
+
+| Facebook Text Post | 
+|--------------------|
+|<img width="200px" height="400px" src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/fp.jpg"/>|
+
