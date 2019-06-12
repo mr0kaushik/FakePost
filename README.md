@@ -25,3 +25,4 @@ This app can be easily use to create meme using posts.
 5. **Options to select Post privacy (public or friends)**
 
 ## Screenshots
+<img src="https://github.com/mr0kaushik/Fake_Post/blob/master/screenshots/mo.jpg"/>
