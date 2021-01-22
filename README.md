@@ -1,6 +1,6 @@
 ![BuiltForAndroid](https://forthebadge.com/images/badges/built-for-android.svg)
 
-# Fake_Post
+# FakePost
 Android App to create fake post of twitter and facebook.
 This app can be easily use to create meme using posts.
 
